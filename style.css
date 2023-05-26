@@ -2,8 +2,9 @@
     font-family: 'DM Sans', sans-serif;
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: auto;
     box-sizing: border-box;
+    
         
 }
 
@@ -14,20 +15,20 @@
     --brand-beige: #FFFAF1;
     --brand-green-hover: #00453A;
 
-    --gray-headline: #061800;
+    --gray-headline: #212529;
     --gray-paragraph: #384633;
     --white: #3e3e3e;
 
-    font-size: 14px;
+    font-size: 62.5%;
 }
 
 /* -------------------------HEADER----------------------------------- */
 
 header {
     position: absolute;
-    width: 1366px;
+    width: auto;
     height: 72px;
-    left: 0px;
+    left: 16rem;
     top: 0px;
     
 }
@@ -61,6 +62,7 @@ nav ul {
     list-style: none;
     gap: 32px;
     text-decoration: none;
+    font-size: 1.6rem;
     
 }
 
@@ -108,7 +110,7 @@ nav button {
     position: absolute;
     width: 605px;
     height: 335px;
-    left: 123px;
+    left: 16rem;
     top: 76px;
 }
 
@@ -116,7 +118,7 @@ nav button {
     position: absolute;
     width: 420px;
     height: 547px;
-    left: 779px;
+    left: 85rem;
     top: 99px;
     margin-top: 76px;
     margin-right: 167px;
@@ -171,7 +173,7 @@ nav button {
     
  }
 
- #home h2 {
+ #home .apresentacao h2 {
     position: absolute;
     width: 605px;
     height: 136px;
@@ -194,34 +196,155 @@ nav button {
     line-height: 150%;
  }
 
- /* -------------------------SERVIÇOS----------------------------------- */
-
-#servicos .numeros {
+ 
+#home .numeros {
     display: flex;
-    align-items: center;
-    padding: 60px 119px 60px 120px;
-    margin: 67px 240px 925px 245px;
+    justify-content: space-between;
+    flex-basis: auto;
     box-sizing: border-box;
     position: absolute;
-    position: absolute;
-    width: 1000px;
-    height: 90px;
-    
-    top: 655px;
-
-   
+    width: 1122px;
+    height: 210px;
+    top: 670px;
     background-color: var(--brand-beige);
     border: 1px solid var(--brand-green-light);
     border-radius: 6px;
 }
 
- #servicos .numeros h2{
+#home .numeros h2{
     position: absolute;
-    width: 167px;
-    height: 62px;
-    left: 244px;
-    top: 631px;
     font-weight: 700;
     font-size: 48px;
     line-height: 130%;
- }
+    color: var(--gray-headline);
+
+}
+
+#home .numeros p {
+    position: absolute;
+    width: 183px;
+    height: 24px;
+
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: var(--brand-green);
+}
+
+#home .numeros .paciente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    content: cover;
+    width: 37.4rem;
+    height: 21rem;
+    position: absolute;
+    flex-grow: 1;
+    flex-basis: auto;
+    border-right: 1px solid;
+    border-image: linear-gradient(var(--brand-beige), var(--brand-green), var(--brand-beige)) 1;
+
+}
+
+
+#home .numeros .paciente h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 8.5rem;
+
+}
+
+#home .numeros .paciente p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 6.6rem;
+    
+
+}
+
+#home .numeros .especialista {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    width: 37.4rem;
+    flex-basis: auto;
+    border-right: 1px solid;
+    border-image: linear-gradient(var(--brand-beige), var(--brand-green), var(--brand-beige)) 1;
+
+}
+
+
+#home .numeros .especialista h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 53rem;
+    bottom: 8.5rem;
+}
+
+#home .numeros .especialista p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 6.6rem;
+    left: 48rem;
+}
+
+#home .numeros .anos {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: auto;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+#home .numeros .anos h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    bottom: 8.5rem;
+}
+
+#home .numeros .anos p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 6.6rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------SERVIÇOS----------------------------------- */
