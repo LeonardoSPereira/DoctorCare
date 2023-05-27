@@ -27,8 +27,8 @@
 header {
     position: absolute;
     width: auto;
-    height: 72px;
-    left: 16rem;
+    height: 7.2rem;
+    left: 8rem;
     top: 0px;
     
 }
@@ -43,10 +43,10 @@ header {
 
 nav img {
     position: absolute;
-    width: 132.86px;
-    height: 17.38px;
-    left: 124.78px;
-    top: 26.91px;
+    width: 13.286rem;
+    height: 1.738rem;
+    left: 12.478rem;
+    top: 2.691rem;
 
 }
 
@@ -54,13 +54,13 @@ nav ul {
     display: flex;
     position: absolute;
     flex-direction: row;
-    width: 345px;
-    height: 21px;
-    left: 513px;
-    top: 25px;
+    width: 34.5rem;
+    height: 2.1rem;
+    left: 51.3rem;
+    top: 2.5rem;
     color: var(--brand-green);
     list-style: none;
-    gap: 32px;
+    gap: 3.2rem;
     text-decoration: none;
     font-size: 1.6rem;
     
@@ -80,15 +80,15 @@ nav button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 24px;
-    gap: 16px;
+    padding: 1rem 2.4rem;
+    /* gap: 1.6rem; */
     position: absolute;
-    width: 190px;
-    height: 38px;
-    left: 1053px;
-    top: 15px;
+    width: 19rem;
+    height: 3.8rem;
+    left: 105.3rem;
+    top: 1.5rem;
     border: 1px solid #00856F;
-    border-radius: 40px;
+    border-radius: 4rem;
 
     color: var(--brand-green);
     font-weight: 700;
@@ -98,8 +98,8 @@ nav button {
 
 #home {
     width: auto;
-    height: 678px;
-    margin-top: 106px;
+    height: 67.8rem;
+    margin-top: 10.6rem;
     background-color: var(--brand-green-light);
     align-items: center;
     display: flex;
@@ -108,21 +108,21 @@ nav button {
 
 #home .apresentacao {
     position: absolute;
-    width: 605px;
-    height: 335px;
-    left: 16rem;
-    top: 76px;
+    width: 60.5rem;
+    height: 33.5rem;
+    left: 8rem; 
+    top: 7.6rem;
 }
 
 #home img.mulher {
     position: absolute;
-    width: 420px;
-    height: 547px;
+    width: 42rem;
+    height: 54.7rem;
     left: 85rem;
-    top: 99px;
-    margin-top: 76px;
-    margin-right: 167px;
-    margin-bottom: 55px;
+    top: 9.9rem;
+    margin-top: 7.6rem;
+    margin-right: 16.7rem;
+    margin-bottom: 5.5rem;
     border: none;
    
 }
@@ -133,40 +133,40 @@ nav button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px 32px;
-    gap: 16px;
+    padding: 1.6rem 3,2rem;
+    gap: 1.6rem;
     position: absolute;
     border: none;
-    width: auto;
-    height: 52px;
-    left: 123px;
-    top: 435px;
+    width: 27rem;
+    height: 5.2rem;
+    left: 12.3rem;
+    top: 43.5rem;
     background-color: var(--brand-green);
-    border-radius: 40px;
+    border-radius: 4rem;
     color: white;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
     text-transform: uppercase;
     
    
 }
 
  #home a button img {
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     color: white;
-    margin: 16px;
+    
  }
 
  #home h3 {
     position: absolute;
-    width: 254px;
-    height: 21px;
-    left: 123px;
-    top: 152px;
+    width: 25.4rem;
+    height: 2.1rem;
+    left: 12.3rem;
+    top: 15.2rem;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 150%;
     letter-spacing: 0.06em;
     color: var(--brand-green);
@@ -175,24 +175,24 @@ nav button {
 
  #home .apresentacao h2 {
     position: absolute;
-    width: 605px;
-    height: 136px;
-    left: 123px;
-    top: 189px;
+    width: 60.5rem;
+    height: 13.6rem;
+    left: 12.3rem;
+    top: 18.9rem;
     font-weight: 700;
-    font-size: 52px;
+    font-size: 5.2rem;
     line-height: 130%;
     color: #212529;
  }
 
  #home h4 {
     position: absolute;
-    width: 585px;
-    height: 54px;
-    left: 123px;
-    top: 341px;
+    width: 58.5rem;
+    height: 5.4rem;
+    left: 12.3rem;
+    top: 34.1rem;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 150%;
  }
 
@@ -203,18 +203,18 @@ nav button {
     flex-basis: auto;
     box-sizing: border-box;
     position: absolute;
-    width: 1122px;
-    height: 210px;
-    top: 670px;
+    width: 112.2rem;
+    height: 21rem;
+    top: 67rem;
     background-color: var(--brand-beige);
     border: 1px solid var(--brand-green-light);
-    border-radius: 6px;
+    border-radius: 0.6rem;
 }
 
 #home .numeros h2{
     position: absolute;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 4.8rem;
     line-height: 130%;
     color: var(--gray-headline);
 
@@ -222,8 +222,8 @@ nav button {
 
 #home .numeros p {
     position: absolute;
-    width: 183px;
-    height: 24px;
+    width: 18.3rem;
+    height: 2.4rem;
 
     font-weight: 400;
     font-size: 1.6rem;
@@ -292,7 +292,7 @@ nav button {
     justify-content: center;
     align-items: center;
     bottom: 6.6rem;
-    left: 48rem;
+    left: 48.5rem;
 }
 
 #home .numeros .anos {
