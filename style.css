@@ -2,7 +2,7 @@
     font-family: 'DM Sans', sans-serif;
     margin: 0;
     padding: 0;
-    width: auto;
+    /* width: auto; */
     box-sizing: border-box;
     
         
@@ -318,33 +318,114 @@ nav button {
     justify-content: center;
     align-items: center;
     bottom: 6.6rem;
+    left: 85.5rem;
     
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* -------------------------SERVIÇOS----------------------------------- */
+#servicos {
+    position: absolute;
+    width: auto;
+    height: 108.2rem;
+    background-color: var(--brand-green-light-02);
+    top: 67.8rem;
+}
+
+
+
+#servicos > h3 {
+    position: absolute;
+    margin: 0 auto;
+    width: 7.6rem;
+    height: 2.1rem;
+    left: 74rem;
+    top: 26.3rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 150%;
+    letter-spacing: 0.08em;
+    line-height: 2.1rem;
+    color: var(--brand-green);
+}
+
+#servicos > p {
+    position: absolute;
+    width: 49.7rem;
+    height: 10.4rem;
+    left: 52rem;
+    top: 30rem;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.2rem;
+    text-align: center;
+    color: var(--gray-headline);
+}
+
+#servicos .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 113rem;
+    height: 45.4rem;
+    left: 18rem;
+    top: 46.8rem;
+    gap: 4rem;
+   
+}
+
+#servicos .cards .card {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: end;
+    padding: 2.4rem;
+    gap: 1.6rem;
+    width: 34.7rem;
+    height: 23rem;
+    background-color: white;
+    border: 1px solid var(--brand-green-light);
+    border-radius: 0.6rem;
+}
+
+#servicos .cards .card img {
+    width: 2.4rem;
+    margin-top: 0;
+    height: 2.4rem;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0;
+    
+}
+
+#servicos .cards .card h4 {
+    width: 28rem;
+    display: flex;
+    text-align: left;
+    height: 2rem;
+    top: 0;
+    font-weight: 700;
+    font-size: 2.3rem;
+    line-height: 3.1rem;
+    text-align: center;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: var(--gray-headline);
+
+}
+
+#servicos .cards .card p {
+    width: 29.9rem;
+    height: 7.2rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #495057;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
