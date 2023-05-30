@@ -14,7 +14,6 @@
     --brand-green-light-02: #F7F9F9;
     --brand-beige: #FFFAF1;
     --brand-green-hover: #00453A;
-
     --gray-headline: #212529;
     --gray-paragraph: #384633;
     --white: #3e3e3e;
@@ -81,7 +80,6 @@ nav button {
     justify-content: center;
     align-items: center;
     padding: 1rem 2.4rem;
-    /* gap: 1.6rem; */
     position: absolute;
     width: 19rem;
     height: 3.8rem;
@@ -97,6 +95,7 @@ nav button {
 /* -------------------------HOME----------------------------------- */
 
 #home {
+    
     width: auto;
     height: 67.8rem;
     margin-top: 10.6rem;
@@ -209,6 +208,7 @@ nav button {
     background-color: var(--brand-beige);
     border: 1px solid var(--brand-green-light);
     border-radius: 0.6rem;
+    z-index: 1;
 }
 
 #home .numeros h2{
@@ -217,6 +217,7 @@ nav button {
     font-size: 4.8rem;
     line-height: 130%;
     color: var(--gray-headline);
+    background-color: var(--brand-beige);
 
 }
 
@@ -326,10 +327,11 @@ nav button {
 /* -------------------------SERVIÇOS----------------------------------- */
 #servicos {
     position: absolute;
-    width: auto;
+    width: 100vw;
     height: 108.2rem;
-    background-color: var(--brand-green-light-02);
+    /* background-color: var(--brand-green-light-02); */
     top: 67.8rem;
+    
 }
 
 
@@ -368,11 +370,11 @@ nav button {
     flex-wrap: wrap;
     position: absolute;
     width: 113rem;
-    height: 45.4rem;
-    left: 18rem;
+    height: auto;
+    left: 19.5rem;
     top: 46.8rem;
     gap: 4rem;
-   
+    
 }
 
 #servicos .cards .card {
@@ -428,4 +430,64 @@ nav button {
     flex: none;
     order: 2;
     flex-grow: 0;
+}
+
+
+/* -------------------------SOBRE----------------------------------- */
+
+#sobre {
+    position: absolute;
+    width: 100vw;
+    height: 73.4rem;
+    left: 0;
+    top: 176rem;
+    background-color: var(--brand-beige);
+}
+
+
+#sobre img {
+    position: absolute;
+    width: 48rem;
+    height: 41.4rem;
+    left: 19.5rem;
+    top: 16rem;
+}
+
+#sobre .content {
+    position: absolute;
+    width: 57.3rem;
+    height: 32.7rem;
+    left: 74rem;
+    top: 20.3rem;
+}
+
+#sobre .content h4 {
+    position: absolute;
+    width: auto;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 150%;
+    letter-spacing: 0.08em;
+    
+    color: var(--brand-green);
+}
+
+#sobre .content h3 {
+    position: absolute;
+    top: 3rem;
+    width: 44.7rem;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.2rem;
+    color: var(--gray-headline);
+}
+
+#sobre .content p {
+    position: absolute;
+    width: 57.3rem;
+    top: 15.8rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #495057;
 }
