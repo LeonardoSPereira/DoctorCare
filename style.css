@@ -2,7 +2,7 @@
     font-family: 'DM Sans', sans-serif;
     margin: 0;
     padding: 0;
-    /* width: auto; */
+
     box-sizing: border-box;
     
         
@@ -25,11 +25,12 @@
 body {
     overflow-x: hidden;
 }
-/* -------------------------HEADER----------------------------------- */
+/* -------------------------NORMAL HEADER----------------------------------- */
 
-header {
+.normal-header {
     position: absolute;
-    width: auto;
+    visibility: hidden;
+    width: 100%;
     height: 7.2rem;
     left: 8rem;
     top: 0px;
@@ -44,7 +45,7 @@ header {
 
 }
 
-nav img {
+.normal-header nav img {
     position: absolute;
     width: 13.286rem;
     height: 1.738rem;
@@ -53,7 +54,7 @@ nav img {
 
 }
 
-nav ul {
+.normal-header nav ul {
     display: flex;
     position: absolute;
     flex-direction: row;
@@ -69,14 +70,14 @@ nav ul {
     
 }
 
-a {
+.normal-header a {
     text-decoration: none;
     color: var(--brand-green);
 }
 
 
 
-nav button {
+.normal-header nav button {
     box-sizing: border-box;
     text-transform: uppercase;
     display: flex;
@@ -96,11 +97,103 @@ nav button {
     font-weight: 700;
 }
 
-nav button:hover {
+.normal-header nav button:hover {
     background-color: var(--brand-green);
     color: white;
 }
 
+/* -------------------------FIXED HEADER----------------------------------- */
+.fixed-header {
+    position: fixed;
+    justify-content: space-between;
+    opacity: 1;
+    width: 100%;
+    height: 7.2rem;
+    z-index: 2;
+    top: 0rem;
+    background-color: var(--brand-green);
+    list-style: none;
+    
+}
+
+.fixed-header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+    
+
+}
+
+.fixed-header nav img {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 13.286rem;
+    top: 2.691rem;
+
+}
+
+.fixed-header ul {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 35rem;
+    list-style: none;
+    height: 4.7rem;
+    
+    
+}
+
+
+.fixed-header nav ul li a{
+    display: flex;
+    top: 2.5rem;
+    position: absolute;
+    height: 2.1rem;
+    top: 2.5rem;
+    color: white;
+    list-style: none;
+    gap: 3.2rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    
+}
+
+.fixed-header a {
+    text-decoration: none;
+    color: var(--brand-green);
+}
+
+
+
+.fixed-header nav button {
+    box-sizing: border-box;
+    /* position:absolute; */
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 1rem 2.4rem;
+    position: absolute;
+    width: 19rem;
+    height: 3.8rem;
+    right: 12.3rem;
+    top: 1.5rem;
+    border: 1px solid white;
+    border-radius: 4rem;
+    background-color: var(--brand-green);
+    color: white;
+    font-weight: 700;
+}
+
+.fixed-header nav button:hover {
+    background-color: var(--brand-beige);
+    color: var(--brand-green);
+}
 /* -------------------------HOME----------------------------------- */
 
 
