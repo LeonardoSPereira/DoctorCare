@@ -2,7 +2,6 @@
     font-family: 'DM Sans', sans-serif;
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
     
         
@@ -26,106 +25,25 @@ body {
     overflow-x: hidden;
 }
 /* -------------------------NORMAL HEADER----------------------------------- */
-
-.normal-header {
-    position: absolute;
-    visibility: hidden;
-    width: 100%;
-    height: 7.2rem;
-    left: 8rem;
-    top: 0px;
-    
-}
-
-.normal-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
-
-}
-
-.normal-header nav img {
-    position: absolute;
-    width: 13.286rem;
-    height: 1.738rem;
-    left: 12.478rem;
-    top: 2.691rem;
-
-}
-
-.normal-header nav ul {
-    display: flex;
-    position: absolute;
-    flex-direction: row;
-    width: 34.5rem;
-    height: 2.1rem;
-    left: 51.3rem;
-    top: 2.5rem;
-    color: var(--brand-green);
-    list-style: none;
-    gap: 3.2rem;
-    text-decoration: none;
-    font-size: 1.6rem;
-    
-}
-
-.normal-header a {
-    text-decoration: none;
-    color: var(--brand-green);
-}
-
-
-
-.normal-header nav button {
-    box-sizing: border-box;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2.4rem;
-    position: absolute;
-    width: 19rem;
-    height: 3.8rem;
-    left: 105.3rem;
-    top: 1.5rem;
-    border: 1px solid #00856F;
-    border-radius: 4rem;
-
-    color: var(--brand-green);
-    font-weight: 700;
-}
-
-.normal-header nav button:hover {
-    background-color: var(--brand-green);
-    color: white;
-}
-
-/* -------------------------FIXED HEADER----------------------------------- */
-.fixed-header {
+.header {
     position: fixed;
-    justify-content: space-between;
-    opacity: 1;
     width: 100%;
     height: 7.2rem;
     z-index: 2;
     top: 0rem;
-    background-color: var(--brand-green);
     list-style: none;
+    transition: background-color 0.3s ease;
     
 }
 
-.fixed-header nav {
+.header nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-   
-    
 
 }
 
-.fixed-header nav img {
+.header nav img {
     position: absolute;
     display: flex;
     align-items: center;
@@ -134,10 +52,10 @@ body {
 
 }
 
-.fixed-header ul {
+.header ul {
     display: flex;
     box-sizing: border-box;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     width: 35rem;
@@ -148,13 +66,13 @@ body {
 }
 
 
-.fixed-header nav ul li a{
+.header nav ul li a{
     display: flex;
     top: 2.5rem;
     position: absolute;
     height: 2.1rem;
     top: 2.5rem;
-    color: white;
+    color: var(--brand-green);
     list-style: none;
     gap: 3.2rem;
     text-decoration: none;
@@ -162,16 +80,15 @@ body {
     
 }
 
-.fixed-header a {
+.header a {
     text-decoration: none;
     color: var(--brand-green);
 }
 
 
 
-.fixed-header nav button {
+.header nav button {
     box-sizing: border-box;
-    /* position:absolute; */
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
@@ -183,17 +100,45 @@ body {
     height: 3.8rem;
     right: 12.3rem;
     top: 1.5rem;
-    border: 1px solid white;
+    border: 1px solid var(--brand-green);
     border-radius: 4rem;
-    background-color: var(--brand-green);
-    color: white;
+    color: var(--brand-green);
     font-weight: 700;
+    background-color: white;
 }
 
-.fixed-header nav button:hover {
+.header nav button:hover {
+    background-color: var(--brand-green);
+    color: white;
+}
+
+/* -------------------------FIXED HEADER----------------------------------- */
+.header.fixed-header {
+    background-color: var(--brand-green);
+    
+}
+
+.header.fixed-header #logo{
+    content: url(./assets/LOGO-branco.svg);
+}
+
+
+.header.fixed-header nav ul li a{
+    color: white;
+    
+}
+
+.header.fixed-header nav button {
+    border: 1px solid white;
+    background-color: var(--brand-green);
+    color: white;
+}
+
+.header.fixed-header nav button:hover {
     background-color: var(--brand-beige);
     color: var(--brand-green);
 }
+
 /* -------------------------HOME----------------------------------- */
 
 
