@@ -32,7 +32,7 @@ body {
     z-index: 2;
     top: 0rem;
     list-style: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
     
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .header nav img {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     align-items: center;
     width: 13.286rem;
@@ -68,10 +68,10 @@ body {
 
 .header nav ul li a{
     display: flex;
-    top: 2.5rem;
+    align-items: center;
+    /* top: 2.5rem; */
     position: absolute;
     height: 2.1rem;
-    top: 2.5rem;
     color: var(--brand-green);
     list-style: none;
     gap: 3.2rem;
@@ -88,17 +88,16 @@ body {
 
 
 .header nav button {
-    box-sizing: border-box;
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    /* justify-content: right; */
     align-items: center;
     padding: 1rem 2.4rem;
     position: absolute;
     width: 19rem;
     height: 3.8rem;
-    right: 12.3rem;
+    margin-right: 12.3rem;
     top: 1.5rem;
     border: 1px solid var(--brand-green);
     border-radius: 4rem;
@@ -110,6 +109,7 @@ body {
 .header nav button:hover {
     background-color: var(--brand-green);
     color: white;
+    cursor: pointer;
 }
 
 /* -------------------------FIXED HEADER----------------------------------- */
@@ -137,57 +137,48 @@ body {
 .header.fixed-header nav button:hover {
     background-color: var(--brand-beige);
     color: var(--brand-green);
+    cursor: pointer;
 }
 
 /* -------------------------HOME----------------------------------- */
 
 
 #home {
-    
-    width: auto;
+    min-width: 100%;
     height: 67.8rem;
-    margin-top: 10.6rem;
+    margin-top: 11.4rem;
     background-color: var(--brand-green-light);
-    align-items: center;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #home .apresentacao {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 60.5rem;
     height: 33.5rem;
-    left: 8rem; 
-    top: 7.6rem;
+    margin-left: 15rem;
+    margin-top: 15.2rem;
 }
 
 #home img.mulher {
-    position: absolute;
     width: 42rem;
     height: 54.7rem;
-    left: 85rem;
-    top: 9.9rem;
     margin-top: 7.6rem;
-    margin-right: 16.7rem;
-    margin-bottom: 5.5rem;
-    border: none;
+    margin-left: 5.1rem;
    
 }
 
 
 #home a button {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 1.6rem 3,2rem;
     gap: 1.6rem;
-    position: absolute;
     border: none;
     width: 26.7rem;
     height: 5.2rem;
-    left: 12.3rem;
-    top: 43.5rem;
     background-color: var(--brand-green);
     border-radius: 4rem;
     color: white;
@@ -207,14 +198,13 @@ body {
 
 #home button:hover {
     background-color: var(--brand-green-hover);
+    cursor: pointer;
 }
 
- #home h3 {
-    position: absolute;
+#home h3 {
     width: 25.4rem;
     height: 2.1rem;
-    left: 12.3rem;
-    top: 15.2rem;
+    margin-bottom: 1.6rem;
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 150%;
@@ -224,11 +214,9 @@ body {
  }
 
  #home .apresentacao h2 {
-    position: absolute;
     width: 60.5rem;
     height: 13.6rem;
-    left: 12.3rem;
-    top: 18.9rem;
+    margin-bottom: 1.6rem;
     font-weight: 700;
     font-size: 5.2rem;
     line-height: 130%;
@@ -236,34 +224,31 @@ body {
  }
 
  #home h4 {
-    position: absolute;
     width: 58.5rem;
     height: 5.4rem;
-    left: 12.3rem;
-    top: 34.1rem;
+    margin-bottom: 4rem;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 150%;
  }
 
  
-#home .numeros {
+#home .stats {
     display: flex;
-    justify-content: space-between;
-    flex-basis: auto;
-    box-sizing: border-box;
-    position: absolute;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
     width: 112.2rem;
     height: 21rem;
-    top: 67rem;
+    margin-left: 15rem;
+    margin-top: -5rem;
     background-color: var(--brand-beige);
     border: 1px solid var(--brand-green-light);
     border-radius: 0.6rem;
     z-index: 1;
 }
 
-#home .numeros h2{
-    position: absolute;
+#home .stats h2{
     font-weight: 700;
     font-size: 4.8rem;
     line-height: 130%;
@@ -272,107 +257,29 @@ body {
 
 }
 
-#home .numeros p {
-    position: absolute;
+#home .stats p {
     width: 18.3rem;
     height: 2.4rem;
-
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 150%;
     color: var(--brand-green);
 }
 
-#home .numeros .paciente {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    content: cover;
-    width: 37.4rem;
-    height: 21rem;
-    position: absolute;
-    flex-grow: 1;
-    flex-basis: auto;
-    border-right: 1px solid;
-    border-image: linear-gradient(var(--brand-beige), var(--brand-green), var(--brand-beige)) 1;
-
-}
-
-
-#home .numeros .paciente h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 8.5rem;
-
-}
-
-#home .numeros .paciente p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 6.6rem;
-    
-
-}
-
-#home .numeros .especialista {
+#home .stat {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    align-items: center;
     justify-content: center;
-    width: 37.4rem;
-    flex-basis: auto;
-    border-right: 1px solid;
-    border-image: linear-gradient(var(--brand-beige), var(--brand-green), var(--brand-beige)) 1;
+    text-align: center;
+    align-items: center;
+    gap: 0.4rem;
+}
 
+#home .stats .divider {
+    opacity: 0.5;
 }
 
 
-#home .numeros .especialista h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 53rem;
-    bottom: 8.5rem;
-}
-
-#home .numeros .especialista p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 6.6rem;
-    left: 48.5rem;
-}
-
-#home .numeros .anos {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: auto;
-
-    align-items: center;
-    justify-content: center;
-
-}
-
-#home .numeros .anos h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    bottom: 8.5rem;
-}
-
-#home .numeros .anos p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 6.6rem;
-    left: 85.5rem;
-    
-}
 
 
 /* -------------------------SERVIÇOS----------------------------------- */
@@ -380,7 +287,6 @@ body {
     position: absolute;
     width: 100vw;
     height: 108.2rem;
-    /* background-color: var(--brand-green-light-02); */
     top: 67.8rem;
     
 }
@@ -635,6 +541,7 @@ body {
 
 #contact .contato a button:hover {
     background-color: var(--brand-green-hover);
+    cursor: pointer;
    
 }
 
