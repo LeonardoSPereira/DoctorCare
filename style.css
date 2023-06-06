@@ -33,28 +33,23 @@ body {
     top: 0rem;
     list-style: none;
     transition: background-color 0.5s ease;
-    
 }
 
 .header nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 1%;
 
 }
 
 .header nav img {
-    /* position: absolute; */
-    display: flex;
-    align-items: center;
-    width: 13.286rem;
-    top: 2.691rem;
+    width: 13.3rem;
 
 }
 
 .header ul {
     display: flex;
-    box-sizing: border-box;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -67,10 +62,6 @@ body {
 
 
 .header nav ul li a{
-    display: flex;
-    align-items: center;
-    /* top: 2.5rem; */
-    position: absolute;
     height: 2.1rem;
     color: var(--brand-green);
     list-style: none;
@@ -89,16 +80,10 @@ body {
 
 .header nav button {
     text-transform: uppercase;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: right; */
     align-items: center;
     padding: 1rem 2.4rem;
-    position: absolute;
     width: 19rem;
     height: 3.8rem;
-    margin-right: 12.3rem;
-    top: 1.5rem;
     border: 1px solid var(--brand-green);
     border-radius: 4rem;
     color: var(--brand-green);
@@ -144,12 +129,24 @@ body {
 
 
 #home {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     min-width: 100%;
-    height: 67.8rem;
+    height: 64.8rem;
     margin-top: 11.4rem;
     background-color: var(--brand-green-light);
     display: flex;
     flex-wrap: wrap;
+}
+
+#home .container {
+    max-width: 112.2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 #home .apresentacao {
@@ -157,16 +154,20 @@ body {
     flex-direction: column;
     width: 60.5rem;
     height: 33.5rem;
-    margin-left: 15rem;
     margin-top: 15.2rem;
 }
 
 #home img.mulher {
-    width: 42rem;
-    height: 54.7rem;
+    width: 35rem;
+    height: 50.7rem;
     margin-top: 7.6rem;
     margin-left: 5.1rem;
    
+}
+
+#home a {
+    width: 0;
+    text-decoration: none;
 }
 
 
@@ -186,7 +187,7 @@ body {
     font-size: 1.4rem;
     line-height: 1.8rem;
     text-transform: uppercase;
-    
+    text-decoration: none;
 }
 
 #home a button img {
@@ -218,7 +219,7 @@ body {
     height: 13.6rem;
     margin-bottom: 1.6rem;
     font-weight: 700;
-    font-size: 5.2rem;
+    font-size: 5.0rem;
     line-height: 130%;
     color: #212529;
  }
@@ -235,12 +236,13 @@ body {
  
 #home .stats {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     width: 112.2rem;
     height: 21rem;
-    margin-left: 15rem;
+    /* margin-left: 9%; */
     margin-top: -5rem;
     background-color: var(--brand-beige);
     border: 1px solid var(--brand-green-light);
