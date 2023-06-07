@@ -20,10 +20,11 @@
     font-size: 62.5%;
 }
 
-
 body {
     overflow-x: hidden;
 }
+
+
 /* -------------------------NORMAL HEADER----------------------------------- */
 .header {
     position: fixed;
@@ -60,7 +61,6 @@ body {
     
 }
 
-
 .header nav ul li a{
     height: 2.1rem;
     color: var(--brand-green);
@@ -71,12 +71,14 @@ body {
     
 }
 
+.header nav ul li a:hover{
+    font-weight: bold;
+}
+
 .header a {
     text-decoration: none;
     color: var(--brand-green);
 }
-
-
 
 .header nav button {
     text-transform: uppercase;
@@ -242,7 +244,6 @@ body {
     justify-content: space-around;
     width: 112.2rem;
     height: 21rem;
-    /* margin-left: 9%; */
     margin-top: -5rem;
     background-color: var(--brand-beige);
     border: 1px solid var(--brand-green-light);
@@ -282,26 +283,22 @@ body {
 }
 
 
-
-
 /* -------------------------SERVIÇOS----------------------------------- */
+
 #servicos {
-    position: absolute;
-    width: 100vw;
-    height: 108.2rem;
-    top: 67.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
     
 }
 
-
-
-#servicos > h3 {
-    position: absolute;
-    margin: 0 auto;
+#servicos h3 {
     width: 7.6rem;
-    height: 2.1rem;
-    left: 74rem;
-    top: 26.3rem;
+    margin-top: 14.9rem;
+    margin-bottom: 1.6rem;
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 150%;
@@ -311,11 +308,8 @@ body {
 }
 
 #servicos > p {
-    position: absolute;
     width: 49.7rem;
-    height: 10.4rem;
-    left: 52rem;
-    top: 30rem;
+    margin-bottom: 6.4rem;
     font-weight: 700;
     font-size: 4rem;
     line-height: 5.2rem;
@@ -325,26 +319,24 @@ body {
 
 #servicos .cards {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    position: absolute;
-    width: 113rem;
-    height: auto;
-    left: 19.5rem;
-    top: 46.8rem;
+    max-width: 113rem;
+    width: 100%;
     gap: 4rem;
-    
+    margin-bottom: 16rem;
 }
 
 #servicos .cards .card {
-    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: left;
-    align-items: end;
+    align-items: start;
     padding: 2.4rem;
     gap: 1.6rem;
-    width: 34.7rem;
+    width: 100%;
+    max-width: 32.7rem;
     height: 23rem;
     background-color: white;
     border: 1px solid var(--brand-green-light);
@@ -353,87 +345,62 @@ body {
 
 #servicos .cards .card img {
     width: 2.4rem;
-    margin-top: 0;
     height: 2.4rem;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0;
-    
+    margin-bottom: -2rem;
 }
 
 #servicos .cards .card h4 {
-    width: 28rem;
-    display: flex;
-    text-align: left;
-    height: 2rem;
-    top: 0;
     font-weight: 700;
     font-size: 2.3rem;
-    line-height: 3.1rem;
-    text-align: center;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
     color: var(--gray-headline);
 
 }
 
 #servicos .cards .card p {
-    width: 29.9rem;
+    width: 100%;
     height: 7.2rem;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 150%;
     color: #495057;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
 }
 
 
 /* -------------------------SOBRE----------------------------------- */
 
 #sobre {
-    position: absolute;
-    width: 100vw;
-    height: 73.4rem;
-    left: 0;
-    top: 176rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
     background-color: var(--brand-beige);
+
 }
 
-
 #sobre img {
-    position: absolute;
     width: 48rem;
     height: 41.4rem;
-    left: 19.5rem;
-    top: 16rem;
+    margin: 16rem 0;
+    margin-right: 6.7rem;
 }
 
 #sobre .content {
-    position: absolute;
     width: 57.3rem;
-    height: 32.7rem;
-    left: 74rem;
-    top: 20.3rem;
+
 }
 
 #sobre .content h4 {
-    position: absolute;
-    width: auto;
+    margin-bottom: 1rem;
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 150%;
     letter-spacing: 0.08em;
-    
     color: var(--brand-green);
 }
 
 #sobre .content h3 {
-    position: absolute;
-    top: 3rem;
+    margin-bottom: 2.4rem;
     width: 44.7rem;
     font-weight: 700;
     font-size: 4rem;
@@ -442,9 +409,8 @@ body {
 }
 
 #sobre .content p {
-    position: absolute;
-    width: 57.3rem;
-    top: 15.8rem;
+    width: 100%;
+    max-width: 57.3rem;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 150%;
@@ -454,45 +420,37 @@ body {
 /* -------------------------CONTATO----------------------------------- */
 
 #contact {
-    position: absolute;
-    top: 249.4rem;
-    width: 100vw;
-    height: 69.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     background-color: white;
-    display: inline-block;
     
 } 
 
 #contact > img {
-    position: absolute;
     width: 57.5rem;
     height: 37.9rem;
-    top: 16rem;
-    left: 74rem;
+    margin: 16rem 0;
 }
 
 #contact .contato {
-    width: 40.4rem;
-    height: 30.4rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+  
 }
 
 #contact .contato h3 {
-    position: absolute;
     width: 40.4rem;
-    height: 10.4rem;
-    left: 19.5rem;
-    top: 19.8rem;
+    margin-bottom: 4rem;
     font-weight: 700;
     font-size: 4rem;
     line-height: 5.2rem;
 }
 
 #contact .contato h4:nth-child(2) {
-    position: absolute;
     width: 18.6rem;
-    height: 2.4rem;
-    left: 19.5rem;
-    top: 34.2rem;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 150%;
@@ -504,34 +462,31 @@ body {
 }
 
 #contact .contato h4:nth-child(3) {
-    position: absolute;
     width: 23.3rem;
-    height: 2.4rem;
-    left: 19.5rem;
-    top: 38.2rem;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 150%;
-    margin-bottom: 1.6rem;
+    margin-bottom: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #495057;
 }
 
+.contato a {
+    text-decoration: none;
+    color: var(--brand-green);
+}
+
 #contact .contato a button {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 1.6rem 3,2rem;
     gap: 1.6rem;
-    position: absolute;
     border: 0;
     width: 26.7rem;
     height: 5.2rem;
-    left: 19.5rem;
-    top: 43.5rem;
     background-color: var(--brand-green);
     border-radius: 4rem;
     color: white;
@@ -550,38 +505,30 @@ body {
 /* -------------------------FOOTER----------------------------------- */
 
 #footer {
-    width: 100vw;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: end; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
     height: 26.8rem;
     background-color: var(--brand-green);
-    position: absolute;
-    left: 0px;
-    top: 319.3rem;
 }
 
 #footer .footer {
-    position: absolute;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     width: 25.6rem;
-    height: 10.8rem;
-    left: 19.5rem;
-    top: 5rem;
+
 }
 
 #footer .footer img {
-    position: absolute;
+    margin-bottom: 2.4rem;
     width: 25.6rem;
     height: 3.3rem;
 }
 
 #footer .footer h3:nth-child(2) {
-    position: absolute;
-    width: 13.7rem;
-    height: 1.8rem;
-    top: 8.3rem;
+    margin-bottom: 1.5rem;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -589,10 +536,6 @@ body {
 }
 
 #footer .footer h3:nth-child(3) {
-    position: absolute;
-    width: 18.9rem;
-    height: 1.8rem;
-    top: 11.3rem;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -600,11 +543,7 @@ body {
 }
 
 #footer .social {
-    position: absolute;
     display: flex;
     width: 13.6rem;
-    height: 2.4rem;
-    left: 110.8rem;
-    top: 12.2rem;
     gap: 3.2rem;
 }
