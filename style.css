@@ -20,8 +20,9 @@
     font-size: 62.5%;
 }
 
-body {
-    overflow-x: hidden;
+html, body {
+    height: 100%;
+    /* overflow-x: hidden; */
 }
 
 
@@ -32,6 +33,7 @@ body {
     height: 7.2rem;
     z-index: 2;
     top: 0rem;
+    padding: 0 3%;
     list-style: none;
     transition: background-color 0.5s ease;
 }
@@ -148,15 +150,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border: 1px solid red;
 
 }
 
 #home .apresentacao {
     display: flex;
     flex-direction: column;
-    width: 60.5rem;
-    height: 33.5rem;
+    width: 100%;
+    max-width: 60.5rem;
     margin-top: 15.2rem;
+    border: 1px solid red;
 }
 
 #home img.mulher {
@@ -177,10 +181,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.6rem 3,2rem;
+    padding: 1.6rem 3.2rem;
     gap: 1.6rem;
     border: none;
-    width: 26.7rem;
+    width: 26.3rem;
     height: 5.2rem;
     background-color: var(--brand-green);
     border-radius: 4rem;
@@ -205,8 +209,7 @@ body {
 }
 
 #home h3 {
-    width: 25.4rem;
-    height: 2.1rem;
+    width: 100%;
     margin-bottom: 1.6rem;
     font-weight: 700;
     font-size: 1.4rem;
@@ -217,8 +220,7 @@ body {
  }
 
  #home .apresentacao h2 {
-    width: 60.5rem;
-    height: 13.6rem;
+    width: 100%;
     margin-bottom: 1.6rem;
     font-weight: 700;
     font-size: 5.0rem;
@@ -227,7 +229,7 @@ body {
  }
 
  #home h4 {
-    width: 58.5rem;
+    width: 100%;
     height: 5.4rem;
     margin-bottom: 4rem;
     font-weight: 400;
@@ -242,13 +244,24 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    width: 112.2rem;
-    height: 21rem;
+    width: 100%;
+    max-width: 112.2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     margin-top: -5rem;
     background-color: var(--brand-beige);
     border: 1px solid var(--brand-green-light);
     border-radius: 0.6rem;
     z-index: 1;
+}
+
+#home .stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 0.4rem;
 }
 
 #home .stats h2{
@@ -269,14 +282,6 @@ body {
     color: var(--brand-green);
 }
 
-#home .stat {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap: 0.4rem;
-}
 
 #home .stats .divider {
     opacity: 0.5;
@@ -290,13 +295,12 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: auto;
-
-    
+    border: 1px solid blue;
 }
 
 #servicos h3 {
-    width: 7.6rem;
+    width: 100%;
+    text-align: center;
     margin-top: 14.9rem;
     margin-bottom: 1.6rem;
     font-weight: 700;
@@ -308,7 +312,7 @@ body {
 }
 
 #servicos > p {
-    width: 49.7rem;
+    width: 100%;
     margin-bottom: 6.4rem;
     font-weight: 700;
     font-size: 4rem;
@@ -482,7 +486,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.6rem 3,2rem;
+    padding: 1.6rem 3.2rem;
     gap: 1.6rem;
     border: 0;
     width: 26.7rem;
@@ -546,4 +550,84 @@ body {
     display: flex;
     width: 13.6rem;
     gap: 3.2rem;
+}
+
+/* ----------------------RESPONSIVO--------------------------- */
+
+@media (max-width: 1024px) {
+
+    #home {
+        height: auto;
+    }
+
+    #home .container {
+        max-width: none;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #home .apresentacao {
+        align-items: center;
+        width: 80%;
+        margin: 0;
+        text-align: center;
+    }
+
+    #home .apresentacao h2 {
+        line-height: normal;
+    }
+
+    #home .apresentacao a button {
+        margin-left: -12rem;
+    }
+
+    #home img.mulher {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #home img.mulher {
+        margin-bottom: -4%;
+    }
+
+    #home .stats {
+        margin: 0 auto;
+        margin-bottom: -35%;
+        width: 80%;
+    }
+    
+    #home .stat {
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+
+    #home .stats .divider {
+        display: none;
+    }
+
+    #servicos h3 {
+        margin-top: 34rem;
+    }
+
+    #servicos p {
+        width: 80%;
+    }
+}
+
+@media (max-width: 530px) {
+    #home .apresentacao a button {
+        margin-top: 4rem;
+    
+    }
+
+    #home img.mulher {
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    #home .stats {
+        margin-bottom: -50%;
+    }
 }
