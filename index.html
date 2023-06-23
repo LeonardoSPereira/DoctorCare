@@ -14,8 +14,8 @@
    
 <body>
     <header class="header">
-        <nav>
-            <a href="#home"><img id="logo" src="./assets/Logo.svg" alt="Doctor Care Logo"></a>
+        <nav class="desktop-menu">
+            <a href="#home"><img id="fixed-logo" src="./assets/Logo.svg" alt="Doctor Care Logo"></a>
             <ul>
                 <li> <a href="#home">Início</a> </li>
                 <li> <a href="#sobre">Sobre</a> </li>
@@ -29,6 +29,12 @@
                   agendar consulta
                 </button>
             </a>
+        </nav>
+
+        <nav class="mobile-menu">
+            <a href="#home"><img id="logo" src="./assets/Logo.svg" alt="Doctor Care Logo"></a>
+
+            <img id="mobileMenu" onclick="onClick()" class="menu" src="./assets/menu-icon-green.svg" alt="icone para abrir o menu">
         </nav>
 
     </header>

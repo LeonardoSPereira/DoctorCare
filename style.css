@@ -27,6 +27,10 @@ html, body {
 
 
 /* -------------------------NORMAL HEADER----------------------------------- */
+
+.header .mobile-menu {
+    display: none;
+}
 .header {
     position: fixed;
     width: 100%;
@@ -609,6 +613,38 @@ html, body {
 }
 
 @media (max-width: 768px) {
+    .header .desktop-menu {
+        display: none;
+    }
+
+    .header {
+        background-color: var(--brand-green-light);
+        border: 1px solid red;
+        /* height: 11.4rem; */
+        padding: 0;
+    }
+
+    .header .mobile-menu {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin-top: 0;
+        align-items: center;
+    }
+
+    .header .mobile-menu > img {
+        width: 4rem;
+
+    }
+
+    .header.fixed-header #mobileMenu{
+        content: url(./assets/menu-icon-white.svg);
+    }
+
+    #home {
+        margin-top: 7rem;
+    }
+
     #home img.mulher {
         margin-bottom: -4%;
     }
