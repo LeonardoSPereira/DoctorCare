@@ -26,11 +26,14 @@ html, body {
 }
 
 
+
+
 /* -------------------------NORMAL HEADER----------------------------------- */
 
 .header .mobile-menu {
     display: none;
 }
+
 .header {
     position: fixed;
     width: 100%;
@@ -111,7 +114,7 @@ html, body {
     
 }
 
-.header.fixed-header #logo{
+.header.fixed-header #fixed-logo{
     content: url(./assets/LOGO-branco.svg);
 }
 
@@ -127,7 +130,7 @@ html, body {
     color: white;
 }
 
-.header.fixed-header nav button:hover {
+.header.fixed-header nav .agende:hover {
     background-color: var(--brand-beige);
     color: var(--brand-green);
     cursor: pointer;
@@ -618,9 +621,9 @@ html, body {
     }
 
     .header {
+        width: 100%;
+        box-sizing: border-box;
         background-color: var(--brand-green-light);
-        border: 1px solid red;
-        /* height: 11.4rem; */
         padding: 0;
     }
 
@@ -630,23 +633,163 @@ html, body {
         width: 100%;
         margin-top: 0;
         align-items: center;
+        justify-content: space-between;
     }
 
-    .header .mobile-menu > img {
+    .header .mobile-menu #fixed-logo {
+        margin-left: 1rem;
+    }
+
+    .header .mobile-menu .open-menu,
+    .header .mobile-menu .close-menu  {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+    }
+
+    
+
+    .header .mobile-menu .open-menu img {
         width: 4rem;
 
+    }
+
+    .header .mobile-menu .open-menu {
+        display: block;
+    }
+
+    .header .mobile-menu .logo {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+
+    .close-menu {
+        display: none;
     }
 
     .header.fixed-header #mobileMenu{
         content: url(./assets/menu-icon-white.svg);
     }
 
+    .menu {
+        display: none;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu .social {
+        display: none;
+    }
+
+    /* ----------------------MENU EXPANDED--------------------------- */
+
+    body.menu-expanded {
+        overflow: hidden;
+    }
+
+    
+    body.menu-expanded .header .logo {
+        opacity: 1;
+        display: block;
+        visibility: visible;
+        position: absolute;
+        z-index: 100;
+        width: 13.3rem;
+        left: 1rem;
+    }
+
+    body.menu-expanded #fixed-logo {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menu, 
+    .close-menu,
+    body.menu-expanded .open-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    body.menu-expanded .close-menu{
+        display: block;
+    }
+
+    body.menu-expanded .menu,
+    body.menu-expanded .close-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body.menu-expanded .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        color: white;
+        background-color: var(--brand-green);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 3rem;
+        
+    }
+
+    body.menu-expanded nav {
+        position: relative;
+    }
+
+    body.menu-expanded .menu ul {
+        margin-top: 18rem;
+        gap: 4.8rem;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    body.menu-expanded .menu button {
+        margin-top: 9rem;
+        position: static;
+        background-color: white;
+        color: var(--brand-green);
+        
+    }
+
+    body.menu-expanded .menu a{
+        color: white;
+        font-weight: bold;
+    }
+
+    body.menu-expanded .menu .social {
+        display: flex;
+        margin-top: 6rem;
+        gap: 3.2rem  
+    }
+
+    body.menu-expanded .menu .social img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    body.menu-expanded .close-menu {
+        position: relative;
+        z-index: 100;
+        
+    }
+    
+
     #home {
         margin-top: 7rem;
     }
 
     #home img.mulher {
-        margin-bottom: -4%;
+        margin-bottom: -20%;
     }
 
     #home .stats {
@@ -723,7 +866,11 @@ html, body {
     }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 580px) {
+    .header .mobile-menu {
+        width: 100%;
+    }
+
     #home .apresentacao a button {
         margin-top: 4rem;
     
