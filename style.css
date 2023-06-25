@@ -20,6 +20,10 @@
     font-size: 62.5%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
     /* overflow-x: hidden; */
@@ -677,6 +681,7 @@ html, body {
 
     .menu {
         display: none;
+    
     }
 
     .menu ul {
@@ -739,6 +744,7 @@ html, body {
         height: 100%;
         gap: 3rem;
         
+        
     }
 
     body.menu-expanded nav {
@@ -754,8 +760,6 @@ html, body {
     }
 
     body.menu-expanded .menu button {
-        margin-top: 9rem;
-        position: static;
         background-color: white;
         color: var(--brand-green);
         
@@ -763,18 +767,23 @@ html, body {
 
     body.menu-expanded .menu a{
         color: white;
+        margin-top: 9rem;
         font-weight: bold;
+    }
+
+    body.menu-expanded .menu > a{
+        margin-top: 9rem;
     }
 
     body.menu-expanded .menu .social {
         display: flex;
-        margin-top: 6rem;
+        height: 2.4rem;
         gap: 3.2rem  
     }
 
     body.menu-expanded .menu .social img {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.4rem;
+        height: 2.4rem;
     }
 
     body.menu-expanded .close-menu {
@@ -786,10 +795,20 @@ html, body {
 
     #home {
         margin-top: 7rem;
+        padding-top: 6rem;
+    }
+
+    #home .apresentacao h2 {
+        width: 95%;
+        font-size: 3.4rem;
+    }
+
+    #home h4 {
+        font-size: 1.8rem;
     }
 
     #home img.mulher {
-        margin-bottom: -20%;
+        margin-bottom: -4%;
     }
 
     #home .stats {
@@ -873,7 +892,7 @@ html, body {
 
     #home .apresentacao a button {
         margin-top: 4rem;
-    
+        margin-left: -13rem;
     }
 
     #home img.mulher {
@@ -894,5 +913,29 @@ html, body {
     #servicos .cards .card p {
         width: 80%;
         height: auto;
+    }
+}
+
+@media (max-width: 460px) {
+    #home img.mulher {
+        margin-bottom: -10%;
+    }
+}
+
+@media (max-width: 400px) {
+    #home img.mulher {
+        margin-bottom: -20%;
+    }
+}
+
+@media (max-width: 350px) {
+    #home img.mulher {
+        margin-bottom: -30%;
+    }
+}
+
+@media (max-width: 310px) {
+    #home img.mulher {
+        margin-bottom: -40%;
     }
 }
