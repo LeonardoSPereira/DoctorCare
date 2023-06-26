@@ -78,14 +78,36 @@ html, body {
     height: 2.1rem;
     color: var(--brand-green);
     list-style: none;
+    opacity: 0.6;
     gap: 3.2rem;
     text-decoration: none;
     font-size: 1.6rem;
     
 }
 
+
+.header nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2.2px;
+    background-color: var(--brand-green);
+    display: block;
+    position: relative;
+    bottom: -2.25rem;
+    transition: width 0.2s;
+}
+
+.header nav ul li a.active::after,
+.header nav ul li a:hover::after {
+    width: 120%;
+    left: -0.4rem;
+}
+
+.header nav ul li a.active,
 .header nav ul li a:hover{
     font-weight: bold;
+    opacity: 1;
+    transition: opacity 0.2s;
 }
 
 .header a {
@@ -110,6 +132,7 @@ html, body {
     background-color: var(--brand-green);
     color: white;
     cursor: pointer;
+    
 }
 
 /* -------------------------FIXED HEADER----------------------------------- */
@@ -125,6 +148,11 @@ html, body {
 
 .header.fixed-header nav ul li a{
     color: white;
+    
+}
+
+.header.fixed-header nav ul li a::after {
+    background-color: white;
     
 }
 
@@ -937,5 +965,11 @@ html, body {
 @media (max-width: 310px) {
     #home img.mulher {
         margin-bottom: -40%;
+    }
+
+    #servicos .cards .card {
+        margin: 0 auto;
+        width: 95%;
+        height: 40rem;
     }
 }
