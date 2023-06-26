@@ -93,7 +93,7 @@ html, body {
     background-color: var(--brand-green);
     display: block;
     position: relative;
-    bottom: -2.25rem;
+    bottom: -2.24rem;
     transition: width 0.2s;
 }
 
@@ -594,6 +594,23 @@ html, body {
 }
 
 /* ----------------------RESPONSIVO--------------------------- */
+@media (max-width: 1300px) {
+    .header nav ul li a::after {
+        bottom: -2.4rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header nav ul li a::after {
+        bottom: -2.6rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .header nav ul li a::after {
+        bottom: -2.8rem;
+    }
+}
 
 @media (max-width: 1024px) {
 
@@ -913,6 +930,12 @@ html, body {
     }
 }
 
+@media (max-width: 650px) {
+    #home .stats {
+        margin-bottom: -45%;
+    }
+}
+
 @media (max-width: 580px) {
     .header .mobile-menu {
         width: 100%;
@@ -948,6 +971,10 @@ html, body {
     #home img.mulher {
         margin-bottom: -10%;
     }
+
+    #home .stats {
+        margin-bottom: -60%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -960,11 +987,19 @@ html, body {
     #home img.mulher {
         margin-bottom: -30%;
     }
+
+    #home .stats {
+        margin-bottom: -80%;
+    }
 }
 
 @media (max-width: 310px) {
     #home img.mulher {
         margin-bottom: -40%;
+    }
+
+    #home .stats {
+        margin-bottom: -100%;
     }
 
     #servicos .cards .card {
